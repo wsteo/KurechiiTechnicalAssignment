@@ -35,7 +35,7 @@ public class Initialization : MonoBehaviour
 
         Algorithm.BellmanFord(graph, 0, 2);
         Algorithm.BellmanFord(graph, 1, 4);
-        Algorithm.BellmanFord(graph, 0, 3);
+        Algorithm.BellmanFord(graph, 1, 3);
         Algorithm.BellmanFord(graph, 2, 4);
     }
 }
