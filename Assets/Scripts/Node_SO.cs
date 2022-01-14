@@ -13,12 +13,5 @@ public class Node_SO : ScriptableObject
     public int NumberOfNuts { get => _numberOfNuts; set => _numberOfNuts = value; }
 
     [SerializeField] private int _distance;
-    public int Distance {get => _distance; set => _distance = value;}
-
-    public Node_SO(string nodeName, int numberOfNuts)
-    {
-        _nodeName = nodeName;
-        _numberOfNuts = numberOfNuts;
-        _distance = int.MaxValue;
-    }
+    public int Distance { get => _distance; set => _distance = value; }
 }

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nodeName: B
   _numberOfNuts: 2
-  _distance: 6
+  _distance: 2147483647

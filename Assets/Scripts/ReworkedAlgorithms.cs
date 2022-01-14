@@ -5,23 +5,12 @@ using UnityEngine;
 
 public class ReworkedAlgorithms : MonoBehaviour
 {
-    private readonly int NO_PARENT = -1;
     public void BellmanFordAlgorithm(GraphWithNodes graph, Node_SO startingNode, Node_SO goalNode)
     {
 
         int numberOfVertices = graph.Vertices;
         int numberOfEdges = graph.Edge;
         
-        // int[] distance = new int[numberOfVertices];
-
-        // for (int i = 0; i < numberOfVertices; ++i)
-        // {
-        //     distance[i] = int.MaxValue;
-        // }
-
-        // int startingNodeIndex = 0;
-        // distance[startingNodeIndex] = 0;
-
         foreach (Node_SO node in graph.VerticesArray)
         {
             node.Distance = int.MaxValue;

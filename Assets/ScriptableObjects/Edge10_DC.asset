@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e42795b019787f46beac6ba25049ca9, type: 3}
-  m_Name: Edge6
+  m_Name: Edge10_DC
   m_EditorClassIdentifier: 
   SourceNode: {fileID: 11400000, guid: 289fc3f29888e8d4d8a68bd4fc7b1667, type: 2}
-  DestinationNode: {fileID: 11400000, guid: cbb74b4de9f92ca47be622fed70ba81f, type: 2}
-  Weight: -2
+  DestinationNode: {fileID: 11400000, guid: bb1188863824c444aaf9af41b1e11734, type: 2}
+  Weight: 6

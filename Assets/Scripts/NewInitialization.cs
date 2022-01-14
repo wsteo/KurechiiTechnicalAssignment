@@ -6,10 +6,16 @@ using UnityEngine;
 [RequireComponent(typeof(ReworkedAlgorithms))]
 public class NewInitialization : MonoBehaviour
 {
+    [SerializeField] private string _description;
+
     // Store in scriptable object for easy access;
     public Node_SO[] NodeArray;
     public EdgeWithNode_SO[] EdgeArray;
     private ReworkedAlgorithms _reworkAlgorithms;
+
+    [SerializeField] private Node_SO startingNode;
+
+    [SerializeField] private Node_SO goalNode;
 
     private void Awake()
     {
@@ -20,21 +26,10 @@ public class NewInitialization : MonoBehaviour
     {                
         GraphWithNodes graph = new GraphWithNodes(NodeArray, EdgeArray);
 
-        // foreach (Node_SO node in NodeArray)
-        // {
-        //     node.Distance = 0;
-        // }
-
-        // DisplayGraph(graph);
-
+        Debug.Log(_description);
         resetDistance();
-        _reworkAlgorithms.BellmanFordAlgorithm(graph, NodeArray[0], NodeArray[2]);
-        resetDistance();
-        _reworkAlgorithms.BellmanFordAlgorithm(graph, NodeArray[1], NodeArray[4]);
-        resetDistance();
-        _reworkAlgorithms.BellmanFordAlgorithm(graph, NodeArray[1], NodeArray[3]);
-        resetDistance();
-        _reworkAlgorithms.BellmanFordAlgorithm(graph, NodeArray[2], NodeArray[4]);
+        
+        _reworkAlgorithms.BellmanFordAlgorithm(graph, startingNode, goalNode);
     }
 
     public void DisplayGraph(GraphWithNodes graph)
