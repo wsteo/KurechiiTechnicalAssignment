@@ -26,10 +26,18 @@ public class NewInitialization : MonoBehaviour
     {                
         GraphWithNodes graph = new GraphWithNodes(NodeArray, EdgeArray);
 
-        Debug.Log(_description);
         resetDistance();
-        
+
+        Debug.Log(_description);
         _reworkAlgorithms.BellmanFordAlgorithm(graph, startingNode, goalNode);
+    }
+
+    public void resetDistance()
+    {
+        foreach (Node_SO node in NodeArray)
+        {
+            node.Distance = 0;
+        }
     }
 
     public void DisplayGraph(GraphWithNodes graph)
@@ -40,11 +48,4 @@ public class NewInitialization : MonoBehaviour
         }
     }
 
-    public void resetDistance()
-    {
-        foreach (Node_SO node in NodeArray)
-        {
-            node.Distance = 0;
-        }
-    }
 }

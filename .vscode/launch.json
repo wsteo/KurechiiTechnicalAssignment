@@ -36,6 +36,12 @@
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach"
+        },
+        {
+            "name": "Unity Editor",
+            "type": "unity",
+            "path": "D:/Projects/Unity/KurechiiTechnicalAssignment/Library/EditorInstance.json",
+            "request": "launch"
         }
     ]
 }
