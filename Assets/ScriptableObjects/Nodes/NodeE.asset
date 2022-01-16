@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b2682dc2753c644faca2d4fb0bb669a, type: 3}
   m_Name: NodeE
   m_EditorClassIdentifier: 
+  NodeIndex: 4
   NodeName: E
   NumberOfNuts: 0
   Distance: 3

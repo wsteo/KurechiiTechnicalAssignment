@@ -29,7 +29,9 @@ public class NewInitialization : MonoBehaviour
         resetDistance();
 
         Debug.Log(_description);
+
         _reworkAlgorithms.BellmanFordAlgorithm(graph, startingNode, goalNode);
+        _reworkAlgorithms.FindLongestPath(graph, startingNode, goalNode);
     }
 
     public void resetDistance()
