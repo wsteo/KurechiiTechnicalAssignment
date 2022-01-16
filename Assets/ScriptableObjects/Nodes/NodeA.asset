@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b2682dc2753c644faca2d4fb0bb669a, type: 3}
   m_Name: NodeA
   m_EditorClassIdentifier: 
+  NodeIndex: 0
   NodeName: A
   NumberOfNuts: 0
   Distance: 0
   Parent: {fileID: 0}
   NoParent: 1
+  neighbourNodes:
+  - {fileID: 11400000, guid: a97167280d22de34b980862bbf9e0ae1, type: 2}
+  - {fileID: 11400000, guid: 289fc3f29888e8d4d8a68bd4fc7b1667, type: 2}
+  - {fileID: 11400000, guid: cbb74b4de9f92ca47be622fed70ba81f, type: 2}

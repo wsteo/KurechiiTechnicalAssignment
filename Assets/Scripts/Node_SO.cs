@@ -12,4 +12,5 @@ public class Node_SO : ScriptableObject
     public int Distance;
     public Node_SO Parent;
     public bool NoParent;
+    public Node_SO[] neighbourNodes;
 }

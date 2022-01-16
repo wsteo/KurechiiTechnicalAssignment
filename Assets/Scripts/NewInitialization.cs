@@ -12,10 +12,12 @@ public class NewInitialization : MonoBehaviour
     public Node_SO[] NodeArray;
     public EdgeWithNode_SO[] EdgeArray;
     private ReworkedAlgorithms _reworkAlgorithms;
-
     [SerializeField] private Node_SO startingNode;
-
     [SerializeField] private Node_SO goalNode;
+
+    [SerializeField] private bool _shortestPath;
+
+    [SerializeField] private bool _longestPath;
 
     private void Awake()
     {
@@ -28,10 +30,19 @@ public class NewInitialization : MonoBehaviour
 
         resetDistance();
 
-        Debug.Log(_description);
+        Debug.Log("-----" + _description + "-----");
 
-        _reworkAlgorithms.BellmanFordAlgorithm(graph, startingNode, goalNode);
-        _reworkAlgorithms.FindLongestPath(graph, startingNode, goalNode);
+        if (_shortestPath)
+        {
+            _reworkAlgorithms.BellmanFordAlgorithm(graph, startingNode, goalNode);
+        }
+        
+        if (_longestPath)
+        {
+            _reworkAlgorithms.FindLongestPath(graph, startingNode, goalNode);
+        }
+        // _reworkAlgorithms.ShortestPathWithNuts(graph,startingNode,5);
+        // _reworkAlgorithms.FindGoalNodeBasedOnNumOfNuts(graph, startingNode, 5);
     }
 
     public void resetDistance()

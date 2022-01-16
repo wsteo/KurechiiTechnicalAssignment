@@ -216,6 +216,97 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &958089111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7552193957138271803, guid: 9083d139e4f941645af587a6c77c0dfd, type: 3}
+  m_PrefabInstance: {fileID: 7552193957268394987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &958089112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958089111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97291ecb1996b3842a096ab06c9570cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _description: Q3. Shortest path to collect exactly 5 nuts.
+  NodeArray:
+  - {fileID: 11400000, guid: 603697dc2c1f35041bce3b37e89ceb71, type: 2}
+  - {fileID: 11400000, guid: a97167280d22de34b980862bbf9e0ae1, type: 2}
+  - {fileID: 11400000, guid: bb1188863824c444aaf9af41b1e11734, type: 2}
+  - {fileID: 11400000, guid: 289fc3f29888e8d4d8a68bd4fc7b1667, type: 2}
+  - {fileID: 11400000, guid: cbb74b4de9f92ca47be622fed70ba81f, type: 2}
+  EdgeArray:
+  - {fileID: 11400000, guid: 6e1b0317fc485894abc0417710f0bce4, type: 2}
+  - {fileID: 11400000, guid: c8fce1621504ad94ebbfaabc9a263d57, type: 2}
+  - {fileID: 11400000, guid: f9c03e364e1704a49aaa60565afdc91d, type: 2}
+  - {fileID: 11400000, guid: 8370d49ee2c3c1949b7438012e498adb, type: 2}
+  - {fileID: 11400000, guid: 32502f6547362c64290991c706b6f2df, type: 2}
+  - {fileID: 11400000, guid: a9e66a8305906724eaf0a1d2522d80fd, type: 2}
+  startingNode: {fileID: 11400000, guid: 603697dc2c1f35041bce3b37e89ceb71, type: 2}
+  goalNode: {fileID: 11400000, guid: 289fc3f29888e8d4d8a68bd4fc7b1667, type: 2}
+--- !u!114 &958089119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958089111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97291ecb1996b3842a096ab06c9570cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _description: Q5. The longest set of paths (using the most resources) to collect
+    exactly 6 nuts.
+  NodeArray:
+  - {fileID: 11400000, guid: 603697dc2c1f35041bce3b37e89ceb71, type: 2}
+  - {fileID: 11400000, guid: a97167280d22de34b980862bbf9e0ae1, type: 2}
+  - {fileID: 11400000, guid: bb1188863824c444aaf9af41b1e11734, type: 2}
+  - {fileID: 11400000, guid: 289fc3f29888e8d4d8a68bd4fc7b1667, type: 2}
+  - {fileID: 11400000, guid: cbb74b4de9f92ca47be622fed70ba81f, type: 2}
+  EdgeArray:
+  - {fileID: 11400000, guid: c8fce1621504ad94ebbfaabc9a263d57, type: 2}
+  - {fileID: 11400000, guid: 6e1b0317fc485894abc0417710f0bce4, type: 2}
+  - {fileID: 11400000, guid: 8370d49ee2c3c1949b7438012e498adb, type: 2}
+  - {fileID: 11400000, guid: 32502f6547362c64290991c706b6f2df, type: 2}
+  - {fileID: 11400000, guid: f9c03e364e1704a49aaa60565afdc91d, type: 2}
+  - {fileID: 11400000, guid: a9e66a8305906724eaf0a1d2522d80fd, type: 2}
+  startingNode: {fileID: 11400000, guid: 603697dc2c1f35041bce3b37e89ceb71, type: 2}
+  goalNode: {fileID: 11400000, guid: 289fc3f29888e8d4d8a68bd4fc7b1667, type: 2}
+--- !u!114 &958089120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958089111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97291ecb1996b3842a096ab06c9570cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _description: Q4. The shortest set of paths (using the least resources) to collect
+    exactly 7 nuts.
+  NodeArray:
+  - {fileID: 11400000, guid: 603697dc2c1f35041bce3b37e89ceb71, type: 2}
+  - {fileID: 11400000, guid: a97167280d22de34b980862bbf9e0ae1, type: 2}
+  - {fileID: 11400000, guid: bb1188863824c444aaf9af41b1e11734, type: 2}
+  - {fileID: 11400000, guid: 289fc3f29888e8d4d8a68bd4fc7b1667, type: 2}
+  - {fileID: 11400000, guid: cbb74b4de9f92ca47be622fed70ba81f, type: 2}
+  EdgeArray:
+  - {fileID: 11400000, guid: 6e1b0317fc485894abc0417710f0bce4, type: 2}
+  - {fileID: 11400000, guid: c8fce1621504ad94ebbfaabc9a263d57, type: 2}
+  - {fileID: 11400000, guid: f9c03e364e1704a49aaa60565afdc91d, type: 2}
+  - {fileID: 11400000, guid: 4d2159d892e136c479801c5fbbe77ba9, type: 2}
+  - {fileID: 11400000, guid: 8370d49ee2c3c1949b7438012e498adb, type: 2}
+  - {fileID: 11400000, guid: a9e66a8305906724eaf0a1d2522d80fd, type: 2}
+  startingNode: {fileID: 11400000, guid: 603697dc2c1f35041bce3b37e89ceb71, type: 2}
+  goalNode: {fileID: 11400000, guid: bb1188863824c444aaf9af41b1e11734, type: 2}
 --- !u!1 &2031501496
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,6 +397,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7552193957138271801, guid: 9083d139e4f941645af587a6c77c0dfd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7552193957138271802, guid: 9083d139e4f941645af587a6c77c0dfd, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -353,6 +448,18 @@ PrefabInstance:
     - target: {fileID: 7552193957138271803, guid: 9083d139e4f941645af587a6c77c0dfd, type: 3}
       propertyPath: m_Name
       value: Inititalization
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552193957138271805, guid: 9083d139e4f941645af587a6c77c0dfd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552193957138271806, guid: 9083d139e4f941645af587a6c77c0dfd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552193957138271807, guid: 9083d139e4f941645af587a6c77c0dfd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9083d139e4f941645af587a6c77c0dfd, type: 3}

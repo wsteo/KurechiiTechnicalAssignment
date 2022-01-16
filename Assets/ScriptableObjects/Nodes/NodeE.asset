@@ -18,3 +18,6 @@ MonoBehaviour:
   Distance: 3
   Parent: {fileID: 11400000, guid: 603697dc2c1f35041bce3b37e89ceb71, type: 2}
   NoParent: 0
+  neighbourNodes:
+  - {fileID: 11400000, guid: 603697dc2c1f35041bce3b37e89ceb71, type: 2}
+  - {fileID: 11400000, guid: 289fc3f29888e8d4d8a68bd4fc7b1667, type: 2}
